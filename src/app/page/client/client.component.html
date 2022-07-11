@@ -1,0 +1,34 @@
+<!-- 
+<div *ngFor="let photo of photos$ |async; let i = index">
+    <h2> {{ photo.title }} </h2>
+    <h3> {{ photo.albumId }} </h3>
+    <img [src]="photo.thumbnailUrl" [routerLink]="['/client', i+1 ]">
+
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div *ngFor="let photo of photos$ |async ; let i = index">
+    <h2>{{ photo.title }}</h2>
+    <h2>{{ photo.albumId }}</h2>
+    <img [src]="photo.thumbnailUrl" [routerLink]="['/client' , i+1]">
+</div>
